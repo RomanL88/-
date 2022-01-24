@@ -12,11 +12,15 @@
     src:url(Larsseit.woff2);
 }
 
-.header {
+
+header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
-.header-logo{
+
+
+.header-logo, .first-word{
     font-size: 24px;
     line-height: 27px;
     font-family: Larsseit;
@@ -24,13 +28,37 @@
     letter-spacing: -0.035em;
     
     color: #62D0DF;
-    }
+}
+/*удалим маркеры и поля и отступы из списка*/
+/* ДОБАВИЛ В СЕЛЕКТОРЫ УТОЧНЕНИЕ (НЕ ul, А header nav ul)  */
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+header nav ul li {
+    float: left;
+    margin: 0 auto;
+}
+
+
+/*ДОБАВЛЯЕМ В DIV FLEX-CONTAINER*/
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+  /*  flex-wrap:nowrap;
+    /*flex-direction: row;*/
+}
+
 
 body{
     background-color: #F4F9E2;
     margin-left: 179px;
     margin-right: 131px;
     font-family: Larsseit;
+    box-sizing: border-box;
+
 }
 
 
@@ -111,12 +139,3 @@ h1 {
     flex-wrap: nowrap;
 }
     
-/*удалим маркеры и поля и отступы из списка*/
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-li {
-    float: left;
-}
