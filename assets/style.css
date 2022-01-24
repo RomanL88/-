@@ -17,6 +17,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 20px 30px 140px;
+    flex-wrap:wrap;
+
 }
 
 
@@ -41,17 +44,6 @@ header nav ul li {
     margin: 0 auto;
 }
 
-
-/*ДОБАВЛЯЕМ В DIV FLEX-CONTAINER*/
-
-.nav {
-    display: flex;
-    justify-content: space-between;
-  /*  flex-wrap:nowrap;
-    /*flex-direction: row;*/
-}
-
-
 body{
     background-color: #F4F9E2;
     margin-left: 179px;
@@ -63,11 +55,17 @@ body{
 
 
 nav {
-font-size: 14px;
-line-height: 16px;
-color: #22356F;
 flex-direction: row;
 text-align: center;
+flex-wrap:nowrap;
+}
+/*поправил цвет ссылок с nav на (nav ul li a)  */
+nav ul li a {
+    font-size: 14px;
+    line-height: 16px;
+    color: #22356F;
+    flex-direction: row;
+    text-align: center;    
 }
 
 a:hover {
@@ -77,19 +75,16 @@ a:hover {
 
 a {
     text-decoration: none;
-    margin-top: 41px;
-    padding: 41px 30px;
+    padding: 7px 15px;
+    align-items: center;
 }
 
-.feedBackButton {
+.header-feedback-button {
     font-size: 20px;
     line-height: 16px;
     display: flex;
     align-items: center;
-
-    margin: 20px 30px;
     padding: 20px 30px;
-
     color: #FFFFFF;
 
     background: #62D0DF;
@@ -97,7 +92,13 @@ a {
     border: none;
 }
 
-h1 {
+.welcome-words {
+    max-width: 472px;
+    max-height: 347px;
+    margin-bottom: 60px;
+}
+
+.welcome-words-subtitle {
     font-size: 48px;
     line-height: 53px;
     letter-spacing: -0.035em;
@@ -110,7 +111,7 @@ h1 {
 
     color: #22356F;
 }
-.button_Question_Who {
+.info-buttons-who {
     font-size: 16px;
     line-height: 23px;
     display: flex;
@@ -123,7 +124,7 @@ h1 {
 
     color: #FFFFFF;
 }
-.button_Question_What {
+.info-buttons-what {
     display: flex;
     align-items: center;
     letter-spacing: 0.1em;
@@ -133,9 +134,11 @@ h1 {
 }
 
 
-.buttons {
+.info-buttons {
     border: none;
     display: flex;
     flex-wrap: nowrap;
+    font-weight: bold;
 }
+
     
