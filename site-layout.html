@@ -7,13 +7,17 @@
     </head>
 
     <body>
-        <header>
-<!--лишний div? 
-тегу header присвоить какой-то класс и работать с ним.-->            
-            <div class="header">                        
-                    <p class="header-logo">Thrivetalk</p>
-            </div>
-            <div>
+        <header>            
+            <!--ЗАКОММЕНТИРОВАЛ КОД <div class="header">-->
+                
+                <!--МЕНЯЕМ p на h1-->
+                <h1 class="header-logo">Thrivetalk</h1>
+            
+            <!--ЗАКОММЕНТИРОВАЛ КОД </div>-->
+            
+            <!--ИСПРАВЛЯЕМ КНОПКУ-->
+            <!--ДОБАВЛЯЕМ В DIV FLEX-CONTAINER-->
+            
                 <nav>
                     <ul>
                         <li><a href="#">Home</a></li>
@@ -22,26 +26,38 @@
                         <li><a href="#">Blog</a></li>
                     </ul>
                 </nav>
+            
+
+            <!-------------------CИНЯЯ КНОПКА-------------------->
+            <div class="contact-button">
                 <button class="feedBackButton">CONTACT&nbsp;US</button>
             </div>
-
+            <!-------------------CИНЯЯ КНОПКА-------------------->
         </header>
-        <p class="header-logo">Thrivetalk</p>
-        <h1>HELPING YOU THRIVE <br> IN ALL AREAS OF LIFE</h1>
-        <p class="therapists">Our highly talented therapists can help you <br>
-            with a range of issues including relationships,<br>
-            sex, PTSD, depression, social anxiety, or even <br>
-            just caring for yourself more.
-        </p>
-        <div class="buttons">
-            <button class="button_Question_Who">
-                WHO AM I
-            </button>
-            
-            <button class="button_Question_What">
-                WHAT DO I DO
-            </button>
-        </div>
 
+                    <!--------------------ДОБАВЛЯЮ MAIN---------------------->
+        <main>
+            <p class="first-word">Thrivetalk</p>
+            
+            <section>
+                <h1>HELPING YOU THRIVE <br> IN ALL AREAS OF LIFE</h1>
+                <p class="therapists">Our highly talented therapists can help you <br>
+                    with a range of issues including relationships,<br>
+                    sex, PTSD, depression, social anxiety, or even <br>
+                    just caring for yourself more.
+                </p>
+            </section>
+            <div class="buttons">
+                <button class="button_Question_Who">
+                    WHO AM I
+                </button>
+                
+                <button class="button_Question_What">
+                    WHAT DO I DO
+                </button>
+            </div>
+
+        </main>
+                  <!-------------------------MAIN-------------------------->
     </body>
 </html>
